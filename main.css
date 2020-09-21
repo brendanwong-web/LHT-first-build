@@ -52,7 +52,9 @@ div.jumbotron {
 .carousel-item {
   height: 350px;
   margin-bottom: 0rem;
-  position: relative
+  position: relative;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .carousel-caption {
@@ -299,6 +301,8 @@ body {
 
 
 @media only screen and (min-width: 600px) {
+
+
   #jumbotron-text {
     background: #ace5ed;
     background: linear-gradient(180deg, rgba(172,229,237,1) 10%, rgba(156,225,231,1) 94%); 
@@ -432,6 +436,11 @@ body {
   .team-top div{
     background: white;
   }
+
+  #about .row div {
+    background: white;
+  }
+
 }
 
 
