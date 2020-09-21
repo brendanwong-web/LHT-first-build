@@ -1,7 +1,7 @@
 
 
 $(document).ready(function(){
-  $(this).scrollTop(0);
+  /* $(this).scrollTop(0); */
 
   $(".navbar li a").on('click', function(event) {
     if (this.hash !== "") {

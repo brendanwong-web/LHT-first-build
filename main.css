@@ -3,14 +3,6 @@ html, body {
   overflow-x: hidden;
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
 h1 span {
   font-size: 1.3em;
 }
@@ -144,40 +136,29 @@ div.jumbotron {
   background: #ace5ed;
 }
 
-.team-header-cont {
-  position: relative;
-  padding-right: 0;
-  margin-top: 2rem;
-}
 
 .team-header-container .img {
-  position: relative;
   -webkit-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
 }
 
+
 .team-header {
-  border-radius: 1%;
-  z-index: -1;
-  position: absolute;
-  top: 10%;
-  left: 0%;
-  height: 240px;
-  width: 100%;
+  border-radius: 2%;
+  padding-right: 20%;
+  padding-left: 1rem;
+  width: 110%;
   background: #7F7FD5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .team-header-ellen {
-  border-radius: 1%;
-  z-index: -1;
-  position: absolute;
-  top: 10%;
-  left: 0%;
-  height: 220px;
-  width: 100%;
+  border-radius: 2%;
+  padding-right: 10%;
+  padding-left: 1rem;
+  width: 110%;
   background: #7F7FD5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -412,11 +393,6 @@ body {
     background: white;
   }
 
-  .team-header-cont {
-    position: relative;
-    padding-right: 0;
-    margin-top: 2rem;
-  }
   .team-header-container .img {
     position: relative;
     -webkit-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
@@ -425,26 +401,14 @@ body {
   }
   
   .team-header {
-    border-radius: 1%;
-    z-index: -1;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 260px;
-    width: 93.5%;
+    border-radius: 2%;
     background: #7F7FD5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   .team-header-ellen {
-    border-radius: 1%;
-    z-index: -1;
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    height: 230px;
-    width: 93.5%;
+    border-radius: 2%;
     background: #7F7FD5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
