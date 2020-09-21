@@ -164,6 +164,11 @@ div.jumbotron {
   background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.team-header img {
+  min-width: 150px;
+  max-height: 300px
+}
+
 #about p.blockquote {
   color: black;
 }
@@ -413,6 +418,7 @@ body {
     background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
+
 
   footer {
     margin-bottom: 5rem;
