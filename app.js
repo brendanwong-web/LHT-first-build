@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
   $(this).scrollTop(0);
+  $('button').text("Read more");
 
   $(".navbar li a").on('click', function(event) {
     if (this.hash !== "") {
