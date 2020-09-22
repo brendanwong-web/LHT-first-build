@@ -1,8 +1,5 @@
-
-
 $(document).ready(function(){
   $(this).scrollTop(0);
-  $('button').text("Read more");
 
   $(".navbar li a").on('click', function(event) {
     if (this.hash !== "") {
@@ -23,12 +20,10 @@ $('.navbar-nav a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
 });
 
-$('button').click(function(e) {
-  e.preventDefault;
-  var t = $(this).text();
-  if(t == "Read more"){
-    $(this).text("Read less");
-  } else {
-    $(this).text("Read more");
-  }
-  });
+$('#testimonials div.collapse').on('shown.bs.collapse', function() {
+  $(this).next().text("Read less");
+})
+
+$('#testimonials div.collapse').on('hidden.bs.collapse', function() {
+  $(this).next().text("Read more");
+})
