@@ -189,20 +189,20 @@ div.jumbotron {
 
 .scrolling-wrapper::before {
   content: '';
-  border-left: 20px solid transparent;
+  border-left: 10px solid transparent;
 }
 
 .scrolling-wrapper::after {
   content: '';
-  border-right: 30px solid transparent;
+  border-right: 10px solid transparent;
 }
 
 .scrolling-wrapper .card {
-  margin-left: 1rem;
+  margin-left: 5%;
   display: inline-block;
   flex: 0 0 auto;
   background-color: #ace5ed;
-  width: 20rem;
+  width: 95%;
   scroll-snap-align: center;
   scroll-snap-stop: always;
   overflow-wrap: break-word;
@@ -214,6 +214,9 @@ div.jumbotron {
   word-wrap: break-word;
 }
 
+.quotes {
+  font-size: 10rem;
+}
 
 footer {
   margin-bottom: 3rem;
