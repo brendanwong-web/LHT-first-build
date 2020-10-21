@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 html, body {
   font-size: 18px;
   overflow-x: hidden;
+  font-family: 'Assistant', sans-serif;
 }
 
 h1 span {
@@ -25,7 +29,7 @@ div.jumbotron {
   background: #ace5ed;
   z-index: 0;
   background: linear-gradient(180deg, rgba(172,229,237,1) 10%, rgba(156,225,231,1) 94%); 
-  text-align: left;
+  text-align: center;
   color: black;
   padding: 1rem 2rem 2rem 2rem;
 }
@@ -50,7 +54,7 @@ div.jumbotron {
 
 
 .carousel-item {
-  height: 350px;
+  height: 400px;
   margin-bottom: 0rem;
   position: relative;
   transform: translateZ(0);
@@ -59,7 +63,7 @@ div.jumbotron {
 
 .carousel-caption {
   position: absolute;
-  top: 15%;
+  top: 10%;
   max-width: 85%;
 }
 
@@ -73,6 +77,14 @@ div.jumbotron {
   color: white;
 }
 
+.btn {
+  background: #0f9ba0;
+  color: white;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.26);
+}
 
 #carousel .carousel-item:after {
   content:"";
@@ -86,9 +98,50 @@ div.jumbotron {
   background: linear-gradient(to left, rgba(27, 83, 105, 0.6) 0%, #3d83a8 100%);
 }
 
+#about .top-writeup {
+  color: rgb(52, 83, 87);
+  background: #bbedf3;
+  text-align: left;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+#about .linebreak {
+  width: 100%;
+  height: 1px;
+  background:#7dcdd4;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.top-writeup h2 {
+  margin-bottom: 1.5rem;
+}
+
+#team .top-writeup {
+  color:#3f495c;
+  background: #a9c3f3;
+  text-align: left;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+#team .linebreak {
+  width: 100%;
+  height: 1px;
+  background: #f1f6ff;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  text-align: left
+}
+
+.info h4 {
+  margin: 1rem 0;
+}
 
 #about p {
-  color: #666;
+  color: #555;
 }
 
 .vertical-text {
@@ -106,25 +159,11 @@ div.jumbotron {
   height: 15rem;
 }
 
-.about-top div {
-  background: #ace5ed;
-}
-
-.about-header {
-  width: 90%;
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
 
 #about .row {
-  padding-top: 1rem;
   margin-bottom: 1rem;
-
 }
 
-#about .about-body p {
-  color: rgb(71, 71, 71);
-}
 
 #about h3 {
   font-weight: 500;
@@ -139,18 +178,11 @@ div.jumbotron {
 }
 
 
-.team-header-container .img {
-  -webkit-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
-  box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
-}
-
 
 .team-header {
-  border-radius: 2%;
   padding-right: 20%;
   padding-left: 1rem;
-  width: 110%;
+  width: 120%;
   background: #7F7FD5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -158,8 +190,6 @@ div.jumbotron {
 
 .team-header-ellen {
   border-radius: 2%;
-  padding-right: 10%;
-  padding-left: 1rem;
   width: 110%;
   background: #7F7FD5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
@@ -167,12 +197,31 @@ div.jumbotron {
 }
 
 .team-header img {
+  margin-left: 1rem;
+  margin-right: 1rem;
   min-width: 150px;
-  max-height: 300px
+  max-height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#about p.blockquote {
+
+#team blockquote {
   color: black;
+}
+
+#testimonials .top-writeup {
+  color: #1a302b;
+  background: #8bf1db;
+  text-align: left;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+#testimonials .linebreak {
+  width: 100%;
+  height: 1px;
+  background:#499e8d;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .scrolling-wrapper {
@@ -181,32 +230,54 @@ div.jumbotron {
   overflow: auto;
   scroll-snap-type: inline proximity;
   margin-top: 0rem;
-  padding-top: 0rem;
-  padding-bottom: 1rem;
-  scroll-padding: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  scroll-padding: 0rem;
   -webkit-overflow-scrolling: touch;
+  height: 100%;
 }
 
 .scrolling-wrapper::before {
   content: '';
-  border-left: 10px solid transparent;
+  border-left: 1rem solid transparent;
 }
 
 .scrolling-wrapper::after {
   content: '';
-  border-right: 10px solid transparent;
+  border-right: 1rem solid transparent;
 }
 
 .scrolling-wrapper .card {
-  margin-left: 5%;
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
   display: inline-block;
   flex: 0 0 auto;
-  background-color: #ace5ed;
-  width: 95%;
+  border: 1px solid transparent;
+  background: #afe9dc;
+  width: 80%;
   scroll-snap-align: center;
   scroll-snap-stop: always;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-body {
+  padding: 2rem 2rem;
+  color: #1d2e2a;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  height: 1.5rem;
+}
+
+.card-title h1 {
+  font-size: 2.8rem;
+  font-family: 'Secular One', sans-serif;
 }
 
 .card-text {
@@ -214,48 +285,72 @@ div.jumbotron {
   word-wrap: break-word;
 }
 
-.quotes {
-  font-size: 10rem;
+.card .btn {
+  background: #278386;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.26);
+  font: inherit;
+  border-radius: 5px;
 }
 
-footer {
-  margin-bottom: 3rem;
-  padding-top: 0rem;
+.card .btn:hover,
+.card .btn:active {
+  background: #278386;
+  box-shadow: 1px 1px 8px rgba(77, 51, 51, 0.26);
 }
 
-#contactus1 .top {
-  padding-left: 0rem;
-  padding-right: 0rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 3rem;
-  font-weight: 700; 
-  text-shadow: -3px 3px 1px rgba(0,0,0,0.2);
+.videocaption {
+  width: 80%;
+  color: #0b4236;
 }
 
-#fees p {
-  color: rgb(71, 71, 71);
+.embed-responsive {
+  width: 85%;
+  border-radius: 5px;
 }
 
-#chat {
-  color: #25D366;
+#enquiries .top-writeup {
+  color: #582521;
+  background: #fab5a9;
+  text-align: left;
+  padding: 3rem 3rem 2rem 3rem;
 }
 
-
-#mail {
-  color: #D44638;
+#enquiries .linebreak {
+  width: 100%;
+  height: 1px;
+  background:#4d0402;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-
-#logo {
-  width: 40px;
+.fees {
+  color: #382120;
 }
 
-#contactus1 h1 {
-  font-size: x-large;
-  color: rgb(65, 65, 65);
+#contactus .top-writeup {
+  color: #1a3246;
+  background:#6bafe7;
+  text-align: left;
+  padding: 3rem 3rem 2rem 3rem;
 }
 
+#contactus .body {
+  color: #1a3246;
+}
+
+#contactus .body .item svg{
+  margin-right: 1.5rem;
+}
+
+#contactus .body .item img {
+  margin-right: 1.5rem;
+}
+
+#contactus h4 {
+  font-size: 1.4rem;
+}
 
 div.blue {
   background-color: #ace5ed;
@@ -280,6 +375,7 @@ body {
 .navbar-light .navbar-nav .nav-link {
   font-size: 1.4rem;
 }
+
 
 .navbar li a .navlink {
   color: black;
