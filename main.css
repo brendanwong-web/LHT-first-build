@@ -236,7 +236,6 @@ div.jumbotron {
 }
 
 .team-header-ellen {
-  border-radius: 2%;
   width: 110%;
   background: #7F7FD5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
@@ -284,7 +283,7 @@ div.jumbotron {
   scroll-padding: 0rem;
   -webkit-overflow-scrolling: touch;
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 .scrolling-wrapper::before {
