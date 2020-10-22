@@ -479,14 +479,15 @@ nav.navbar-custom {
     text-align: left;
     color: black;
     clip-path: polygon(0 0, 100% 0%, 91% 100%, 0% 100%);
-    padding: 2rem 2.2rem 2rem 2rem;
+    padding: 3rem 7% 3rem 3.5rem;
     -webkit-box-shadow: inset -10px 25px 79px -83px rgba(0,0,0,1);
     -moz-box-shadow: inset -10px 25px 79px -83px rgba(0,0,0,1);
     box-shadow: inset -10px 25px 79px -83px rgba(0,0,0,1);
   }
 
   #jumbotron-logo {
-    text-align: left;
+    display: grid;
+    place-items: center;
     background-color: white;
     padding-top: 2rem;
     padding-left: 1rem;
@@ -693,7 +694,7 @@ nav.navbar-custom {
     top: 0;
     bottom: 0;
     width: 999em;
-    height: 228px;
+    height: 233px;
     background: #7F7FD5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -727,8 +728,8 @@ nav.navbar-custom {
   }
 
   #footer {
-    margin-bottom: 5rem;
-    margin-top: 6rem;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
   }
 
   .enquiries-top div{
