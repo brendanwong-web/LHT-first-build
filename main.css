@@ -1,16 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 html, body {
+  line-height: 1.7em;
   font-size: 18px;
   overflow-x: hidden;
-  font-family: 'Assistant', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 16px;
 }
 
-h1 span {
-  font-size: 1.3em;
+:root {
+  --basic-color: rgba(0, 18, 34, 0.8)
+  --section-header: 700;
+  --section-desc: 300;
 }
 
+p {
+  font-weight: 400;
+  color: var(--basic-color);
+
+}
+
+.blockquote {
+  line-height: 1.5em;
+}
 
 
 div.jumbotron {
@@ -28,10 +41,20 @@ div.jumbotron {
 #jumbotron-text {
   background: #ace5ed;
   z-index: 0;
-  background: linear-gradient(180deg, rgba(172,229,237,1) 10%, rgba(156,225,231,1) 94%); 
-  text-align: center;
-  color: black;
+  text-align: left;
+  color: rgb(49, 45, 45);
   padding: 1rem 2rem 2rem 2rem;
+}
+
+#jumbotron-text h1 {
+  font-weight: 800;
+  font-size: 11vw;
+}
+
+#jumbotron-text h3 {
+  margin-top: 1.5rem;
+  font-weight: 300;
+  font-size: 1.25em;
 }
 
 #jumbotron-logo {
@@ -52,7 +75,6 @@ div.jumbotron {
 }
 
 
-
 .carousel-item {
   height: 400px;
   margin-bottom: 0rem;
@@ -63,22 +85,34 @@ div.jumbotron {
 
 .carousel-caption {
   position: absolute;
-  top: 10%;
+  top: 5%;
   max-width: 85%;
 }
 
 .carousel-caption h1 {
   color: white;
+  font-size: 11vw;
+  font-weight: 800;
   margin-bottom: 1.5rem;
 }
 
 #carousel .carousel-caption p {
+  font-weight: 400;
+  font-size: 1.25em;
   text-align: center;
   color: white;
 }
 
+.btn:hover {
+  color: white;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.26);
+}
+
 .btn {
-  background: #0f9ba0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: #303636;
   color: white;
   padding: 0.5rem 1rem;
   color: white;
@@ -98,19 +132,34 @@ div.jumbotron {
   background: linear-gradient(to left, rgba(27, 83, 105, 0.6) 0%, #3d83a8 100%);
 }
 
-#about .top-writeup {
-  color: rgb(52, 83, 87);
-  background: #bbedf3;
+.top-writeup {
   text-align: left;
   padding: 3rem 3rem 2rem 3rem;
 }
 
-#about .linebreak {
+#about .top-writeup {
+  color: rgb(52, 83, 87);
+  background: #bbedf3;
+}
+
+.top-writeup h2 {
+  font-weight: var(--section-header);
+}
+
+.top-writeup p {
+  font-weight: var(--section-desc);
+  font-size: 1.1rem;
+}
+
+.linebreak {
   width: 100%;
   height: 1px;
-  background:#7dcdd4;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+#about .linebreak {
+  background:#7dcdd4;
 }
 
 .top-writeup h2 {
@@ -120,16 +169,14 @@ div.jumbotron {
 #team .top-writeup {
   color:#3f495c;
   background: #a9c3f3;
-  text-align: left;
-  padding: 3rem 3rem 2rem 3rem;
 }
 
 #team .linebreak {
-  width: 100%;
-  height: 1px;
   background: #f1f6ff;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+}
+
+#team ul {
+  padding: 8%;
 }
 
 .info {
@@ -212,29 +259,24 @@ div.jumbotron {
 #testimonials .top-writeup {
   color: #1a302b;
   background: #8bf1db;
-  text-align: left;
-  padding: 3rem 3rem 2rem 3rem;
 }
 
 #testimonials .linebreak {
-  width: 100%;
-  height: 1px;
   background:#499e8d;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .scrolling-wrapper {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
-  scroll-snap-type: inline proximity;
+  scroll-snap-type: inline mandatory;
   margin-top: 0rem;
   padding-top: 2.5rem;
   padding-bottom: 3rem;
   scroll-padding: 0rem;
   -webkit-overflow-scrolling: touch;
   height: 100%;
+  width:100%;
 }
 
 .scrolling-wrapper::before {
@@ -256,7 +298,7 @@ div.jumbotron {
   background: #afe9dc;
   width: 80%;
   scroll-snap-align: center;
-  scroll-snap-stop: always;
+  scroll-snap-stop: normal;
   overflow-wrap: break-word;
   word-wrap: break-word;
   border-radius: 2px;
@@ -300,6 +342,10 @@ div.jumbotron {
   box-shadow: 1px 1px 8px rgba(77, 51, 51, 0.26);
 }
 
+.vidcont {
+  margin: 3rem 0;
+}
+
 .videocaption {
   width: 80%;
   color: #0b4236;
@@ -310,19 +356,14 @@ div.jumbotron {
   border-radius: 5px;
 }
 
+
 #enquiries .top-writeup {
   color: #582521;
   background: #fab5a9;
-  text-align: left;
-  padding: 3rem 3rem 2rem 3rem;
 }
 
 #enquiries .linebreak {
-  width: 100%;
-  height: 1px;
   background:#4d0402;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .fees {
@@ -332,24 +373,29 @@ div.jumbotron {
 #contactus .top-writeup {
   color: #1a3246;
   background:#6bafe7;
-  text-align: left;
-  padding: 3rem 3rem 2rem 3rem;
 }
 
 #contactus .body {
-  color: #1a3246;
+  color: #b0b0b0;
 }
 
-#contactus .body .item svg{
-  margin-right: 1.5rem;
+#footer {
+  margin: 4rem auto;
+  padding-left: 2rem;
 }
 
-#contactus .body .item img {
+#footer svg{
   margin-right: 1.5rem;
+  fill: #b0b0b0;
 }
+
 
 #contactus h4 {
   font-size: 1.4rem;
+}
+
+#contactus .cont {
+  background: #262829;
 }
 
 div.blue {
@@ -364,9 +410,6 @@ h1 {
   font-weight: 700;
 }
 
-body {
-  font-family: 'Raleway', sans-serif;
-} 
 
 .navbar-toggler {
   outline: 0;
@@ -377,14 +420,18 @@ body {
 }
 
 
-.navbar li a .navlink {
-  color: black;
-  font-weight: 500;
+nav.navbar-custom {
+  background: #dee4e7;
 }
 
-.navbar-light .nav-link .active {
-  color: black;
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(30, 34, 33);
   font-weight: 700;
+}
+
+.navbar-dark .nav-link .active {
+  color: rgb(6, 87, 69);
+  font-weight: 800;
 }
 
 .navbar-light .nav-link.header-btn {
@@ -394,21 +441,37 @@ body {
   color: rgb(255, 250, 238);
   text-decoration: none;
   font-size: 1.4rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  margin: 1rem 0 2.5rem 1rem;
 }
 
 
 @media only screen and (min-width: 600px) {
+  html, body {
+    padding-bottom: 30px;
+  }
 
+  #jumbotron-text h1 {
+    font-size: 4vw;
+  }
+
+  #jumbotron-text h3 {
+    font-size: 2vw;
+  }
 
   #jumbotron-text {
+    font-size: 2rem;
     background: #ace5ed;
     background: linear-gradient(180deg, rgba(172,229,237,1) 10%, rgba(156,225,231,1) 94%); 
     text-align: left;
     color: black;
     clip-path: polygon(0 0, 100% 0%, 91% 100%, 0% 100%);
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2.2rem 2rem 2rem;
     -webkit-box-shadow: inset -10px 25px 79px -83px rgba(0,0,0,1);
     -moz-box-shadow: inset -10px 25px 79px -83px rgba(0,0,0,1);
     box-shadow: inset -10px 25px 79px -83px rgba(0,0,0,1);
@@ -433,18 +496,18 @@ body {
   
   .jumbotron .container {
     position: relative;
-    max-width: 1180px;
+    max-width: 100vw;
   }
 
   #carousel {
     max-width: 100%;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 4em;
     background-color: rgb(186, 187, 187);
   }
   
   .carousel-item {
-    height: 300px;
+    height: 280px;
     position: relative;
     margin-bottom: 0rem;
   }
@@ -484,9 +547,9 @@ body {
   }
   
   .vertical-text {
-    padding-top: 0.3rem;
+    padding-top: 1.8rem;
     padding-left: 0rem;
-    padding-right: 0rem;
+    padding-right: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 3rem;
@@ -496,33 +559,166 @@ body {
     height: 15rem;
   }
 
-  #about .row div {
-    background: white;
+  .top-writeup {
+    margin-bottom: 3rem;
+    width: 150%;
+    text-align: left;
+    padding: 2rem 3rem 1rem 3rem;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
-  .team-header-container .img {
-    position: relative;
-    -webkit-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
-    box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
+  .top-writeup::after {
+    content: '';
+    right: -998em;
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 15px 3px 8px;
   }
+
+  .linebreak {
+    width: 100%;
+    border-radius: 7px;
+    height: 2px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about .top-writeup {
+    color: rgb(52, 83, 87);
+    background: #bbedf3;
+  }
+
+  #about .top-writeup::after {
+    background: #bbedf3;
+  }
+
+  #about .linebreak {
+    background:#7dcdd4;
+  }
+
+  #team .top-writeup {
+    color:#3f495c;
+    background: #a9c3f3;
+  }
+
+  #team .top-writeup::after {
+    background: #a9c3f3;
+  }
+
+  #team .linebreak {
+    background: #dae3f3;
+  }
+
+  #testimonials .top-writeup {
+    color: #1a302b;
+    background: #8bf1db;
+  }
+
+  #testimonials .top-writeup::after {
+    background: #8bf1db;
+  }
+
+  #testimonials .linebreak {
+    background:#499e8d;
+  }
+
+  #enquiries .top-writeup,
+  #enquiries .top-writeup::after {
+    color: #582521;
+     background: #fab5a9;
+  }
+
+  #enquiries .linebreak {
+    background:#4d0402; 
+  }
+
+  #contactus .top-writeup,
+  #contactus .top-writeup::after {
+    color: #1a3246;
+    background:#6bafe7;
+  }
+
   
+.team-header::after {
+    z-index: -1;
+    content: '';
+    left: -998em;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 999em;
+    height: 254px;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.24) -8px 6px 8px;
+}
+
   .team-header {
-    border-radius: 2%;
+    padding-right: 20%;
+    padding-left: 1rem;
+    width: 100%;
+    border-radius: 7px;
     background: #7F7FD5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.24) 7px 6px 7px;
+  }
+
+  .team-header img,
+  .team-header-ellen img {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  
+
+  .team-header-ellen::after {
+    z-index: -1;
+    content: '';
+    left: -998em;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 999em;
+    height: 228px;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.24) -8px 6px 8px;
   }
 
   .team-header-ellen {
-    border-radius: 2%;
+    padding-right: 20%;
+    padding-left: 1rem;
+    width: 100%;
+    border-radius: 7px;
     background: #7F7FD5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.24) 7px 6px 7px;
   }
 
+  .ellen-text {
+    padding-left: 3rem;
+    padding-top: 3rem;
+  }
 
-  footer {
+  #team p,
+  #team ul {
+    color: #555;
+  }
+
+  #team .blockquote {
+    color: #000;
+    margin: 2.5rem 3rem;
+  }
+
+  #footer {
     margin-bottom: 5rem;
     margin-top: 6rem;
   }
@@ -535,10 +731,37 @@ body {
     background: white;
   }
 
-  #about .row div {
-    background: white;
+  .vidcont {
+    margin: 8rem 0;
   }
 
+  .embed-responsive {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  #enquiries {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+
+  .assetcont {
+    align-self: flex-start;
+  }
+
+  #footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  #footer svg { 
+    margin-right: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    margin: 1rem 0 1rem 1rem;
+  }
 }
 
 

@@ -14,16 +14,27 @@ $(document).ready(function(){
       });
     }
   });
+
+  $('#testimonials div.collapse').on('shown.bs.collapse', function() {
+    $(this).next().text("Read less");
+  })
+  
+  $('#testimonials div.collapse').on('hidden.bs.collapse', function() {
+    $(this).next().text("Read more");
+  })
+
+  $('.navbar-nav a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  });
+  
+  
+  
+  $('#abouttext').on('shown.bs.collapse', function() {
+    $(this).prev().text("HIDE PROGRAMME FEATURES");
+  })
+  
+  $('#abouttext').on('hidden.bs.collapse', function() {
+    $(this).prev().text("VIEW PROGRAMME FEATURES");
+  })
 });
 
-$('.navbar-nav a').on('click', function(){
-  $('.navbar-collapse').collapse('hide');
-});
-
-$('#testimonials div.collapse').on('shown.bs.collapse', function() {
-  $(this).next().text("Read less");
-})
-
-$('#testimonials div.collapse').on('hidden.bs.collapse', function() {
-  $(this).next().text("Read more");
-})
