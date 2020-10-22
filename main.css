@@ -251,6 +251,14 @@ div.jumbotron {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.team-header-ellen img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  min-width: 150px;
+  max-height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 
 #team blockquote {
   color: black;
