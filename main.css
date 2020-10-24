@@ -470,8 +470,9 @@ nav.navbar-custom {
 
 
 @media only screen and (min-width: 600px) {
-  html, body {
-    padding-bottom: 30px;
+
+  #home {
+    margin-top: 3rem;
   }
 
   #jumbotron-text h1 {
@@ -520,10 +521,10 @@ nav.navbar-custom {
   }
 
   #threethings {
-    margin: 2rem 4rem;
+    margin: 4rem 4rem;
     text-align: center;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
