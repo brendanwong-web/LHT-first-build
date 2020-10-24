@@ -384,9 +384,32 @@ div.jumbotron {
   background:#4d0402;
 }
 
-.fees {
-  color: #382120;
+.enquiryparent {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+.enquirycard {
+  flex: 1 0;
+  background: #fab5a9;
+  color: #555;
+  margin: 1rem 2rem;
+  padding: 0 0;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+.enquirycard h1 {
+  color: white;
+  background:  #530606;
+  padding: 0.9rem 0;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
 
 #contactus .top-writeup {
   color: #1a3246;
@@ -471,9 +494,6 @@ nav.navbar-custom {
 
 @media only screen and (min-width: 600px) {
 
-  #home {
-    margin-top: 3rem;
-  }
 
   #jumbotron-text h1 {
     font-size: 4vw;
@@ -805,6 +825,11 @@ nav.navbar-custom {
 
 
 @media only screen and (min-width: 600px) {
+  .nav-item a:hover {
+    transform: scale(1.02, 1.02);
+    color: black !important;
+    transition: transform 140ms ease-in-out;
+  }
 
   .navbar-light .navbar-nav .nav-link {
     font-size: 1.2rem;
