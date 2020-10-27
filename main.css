@@ -607,7 +607,7 @@ nav.navbar-custom {
   .vertical-text {
     padding-top: 1.8rem;
     padding-left: 0rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 3rem;
@@ -819,10 +819,6 @@ nav.navbar-custom {
   .copyright {
     font-size: 0.8rem;
     margin: 1rem 0 1rem 1rem;
-  }
-
-  .gmaps {
-    margin-top: 5rem;
   }
 }
 
